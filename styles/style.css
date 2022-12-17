@@ -363,7 +363,6 @@ img {
 
 .overlay-img {
   position: relative;
-  overflow: hidden;
 }
 .overlay-img__text {
   height: 70px;
@@ -383,8 +382,6 @@ img {
   color: #ffffff;
 
   background: rgba(47, 48, 58, 0.8);
-  transition: transform 250ms var(--timing-function);
-  transform: translateY(100%);
 }
 
 .overlay-img:hover .overlay-img__text {
@@ -699,7 +696,8 @@ img {
   transition: transform 250ms var(--timing-function);
 }
 
-.cards-link:hover .thumb__text {
+.cards-link:hover .thumb__text,
+.cards-link:focus .thumb__text {
   transform: translateY(0);
 }
 .cards-link > .card-description {
